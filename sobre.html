@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Growlendário 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="space-background"></div>
+
+    <main id="app" class="about-page">
+        <header class="about-header-top">
+            <div class="header-icon">🌿</div>
+            <h1>Ajuda & Changelog</h1>
+            <p>Documentação e histórico de atualizações</p>
+        </header>
+
+        <nav class="tabs-nav-container">
+            <button class="tab-btn active" onclick="openTab(event, 'como-usar')">📖 Como Usar</button>
+            <button class="tab-btn" onclick="openTab(event, 'changelog')">📝 Changelog</button>
+        </nav>
+
+        <section id="como-usar" class="tab-content active">
+            <div class="version-card">
+                <div class="version-tag-box">
+                    <div class="v-info">
+                        <span class="v-label">Fundamentos</span>
+                        <span class="v-date">CULTIVO LUNAR</span>
+                    </div>
+                    <span class="v-status">Instruções</span>
+                </div>
+                <div class="card-body">
+                    <div class="topic-item">
+                        <h4>🌊 Marés Biológicas</h4>
+                        <p>A lua afeta o movimento da água na Terra e nas plantas. Ao longo do ciclo lunar, a umidade dentro das plantas sobe e desce, afetando a germinação e o vigor.</p>
+                    </div>
+                    <div class="topic-item">
+                        <h4>🌔 Subida e Descida da Lua</h4>
+                        <p>Quando a lua sobe, a seiva concentra-se nas partes superiores; excelente para colher clones. Quando a lua desce, a energia vai para as raízes, fase ideal para o plantio e transplantes.</p>
+                    </div>
+                    <div class="topic-item">
+                        <h4>🌖 Eficácia por Fase</h4>
+                        <p><strong>Crescente/Cheia:</strong> Metabolismo acelerado. Ideal para germinar e nutrir. <br><strong>Minguante/Nova:</strong> Metabolismo calmo. Foco em colheita para secagem uniforme e podas de manutenção.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="changelog" class="tab-content">
+            <div class="version-card">
+                <div class="card-header version-tag-box">
+                    <div class="v-info">
+                        <span class="v-label">Versão 1.0</span>
+                        <span class="v-date">MAR2026</span>
+                    </div>
+                    <span class="v-status">Mais Recente</span>
+                </div>
+                <div class="card-body">
+                    <h4 class="module-title">🚀 Lançamento Oficial</h4>
+                    <ul class="changelog-list-styled">
+                        <li>
+                            <strong>Cálculo Astronômico:</strong> 
+                            <span>Algoritmo baseado no ciclo sinódico de 29.5 dias para precisão total das fases.</span>
+                        </li>
+                        <li>
+                            <strong>Painel de Bio-Disponibilidade:</strong> 
+                            <span>Monitoramento de fluxo de seiva, horários ideais e taxa de germinação.</span>
+                        </li>
+                        <li>
+                            <strong>Monitor de Secagem:</strong> 
+                            <span>Novo índice para preservação de terpenos baseado no potencial osmótico.</span>
+                        </li>
+                        <li>
+                            <strong>Sistema Dual Hemisphere:</strong> 
+                            <span>Inversão automática de máscara lunar para produtores globais.</span>
+                        </li>
+                        <li>
+                            <strong>Interface Progressiva:</strong> 
+                            <span>Design Glassmorphism com navegação por abas e suporte mobile.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Início</a> • <a href="sobre.html" class="active-link">Sobre</a>
+        </nav>
+        <p>Desenvolvido por <a href="http://www.willdsg.com.br" target="_blank">William Santana</a>, utilizando IA. © 2026</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove("active"); }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

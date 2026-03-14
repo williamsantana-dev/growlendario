@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growlendário 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="space-background"></div>
+
+    <main id="app">
+        <header class="main-header">
+            <div id="moon-icon-container"></div>
+            
+            <div class="date-info">
+                <h1 id="current-date">-- de --</h1>
+                <h2 id="moon-phase-name">Fase Lunar</h2>
+            </div>
+
+            <div class="status-panel">
+                <div class="status-item"><span>Fluxo de Seiva:</span><span id="sap-flow" class="value">--</span></div>
+                <div class="status-item"><span>Nutrição Ideal:</span><span id="bio-nutri" class="value">--</span></div>
+                <div class="status-item"><span>Secagem/Cura:</span><span id="dry-index" class="value">--</span></div>
+                <div class="status-item"><span>Melhor Horário:</span><span id="best-time" class="value">--</span></div>
+                <div class="status-item"><span>Sucesso Germinação:</span><span id="germination-rate" class="value">--</span></div>
+                <div class="status-item"><span>Risco de Estresse:</span><span id="stress-risk" class="value">--</span></div>
+            </div>
+
+            <div class="advice-group">
+                <div id="day-tasks" class="tasks-emojis"></div>
+                <p id="mindset-tag" class="mindset">--</p>
+                <p id="cultivation-tip">Carregando...</p>
+            </div>
+        </header>
+
+        <section class="calendar-container">
+            <div id="calendar-grid"></div>
+        </section>
+
+        <section class="legend-box">
+            <h3>Guia de Atividades</h3>
+            <div class="legend-grid">
+                <div class="col-left">
+                    <div class="item">Germinar/Plantar <span>🌱</span></div>
+                    <div class="item">Transplantar <span>🪴</span></div>
+                    <div class="item">Podas/Clones <span>✂️</span></div>
+                    <div class="item">Colher Brotos <span>🪓</span></div>
+                    <div class="item">Limpeza <span>🧹</span></div>
+                    <div class="item">Música <span>🎶</span></div>
+                </div>
+                <div class="col-right">
+                    <div class="item"><span>🐛</span> Pragas</div>
+                    <div class="item"><span>💦</span> Rega Foliar</div>
+                    <div class="item"><span>🍂</span> Orgânico</div>
+                    <div class="item"><span>💎</span> Mineral</div>
+                    <div class="item"><span>🧘</span> Meditar</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- <div class="schedule-filters">
+            <select id="month-select" class="dark-select"></select>
+            <select id="year-select" class="dark-select"></select>
+        </div> -->
+        <select id="hemisphere-select" class="dark-select">
+            <option value="south" selected>Hemisfério Sul</option>
+            <option value="north">Hemisfério Norte</option>
+        </select>
+        
+        <nav class="footer-nav">
+            <a href="index.html" class="active-link">Início</a> • <a href="sobre.html">Sobre</a>
+        </nav>
+        <p>Desenvolvido por <a href="http://www.willdsg.com.br" target="_blank">William Santana</a>, utilizando IA. © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
